@@ -1,0 +1,47 @@
+.grid1{
+    @include grids(grid, 100%, 7fr 1fr, 20% 40% 40%,
+    "encabezado sponsors"
+    "parrafo sponsors"
+    "fotos sponsors")
+}
+.contenedor-general{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.contenedor-p{
+    display: flex;
+    width: 100%;
+}
+.contenedor-fotos{
+    border: solid 2px $mainColor;
+    border-radius: 10px;
+    padding: 26px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.contenedor-aside-nosotros{
+    @extend .contenedor-aside-inicio;
+    flex-direction: column;
+    width: 27%;
+    img{
+        width: 85%;
+    }
+}
+.card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 43px;
+}
+.w-30{
+    width: 30%;
+}
+#sponsors-nosotros{
+    display: flex;
+    grid-area: sponsors;
+}

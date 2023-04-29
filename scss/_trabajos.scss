@@ -1,0 +1,40 @@
+.grid3{
+    @include grids(grid, 100%, 11fr 1.4fr, 6% 90%,
+    "encabezado sponsors"
+    "fotos sponsors")
+}
+
+.contenedor-aside-trabajos{
+    @extend .contenedor-aside-inicio;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 7px;
+    height: 100%;
+    img{
+        width: 85%;
+    }
+}
+.trabajos-realizados{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    figure{
+        width: 30%;
+        border: solid 2px gray;
+        border-radius: 10px;
+        margin: 10px;
+        figcaption{
+                color: gray;
+                font-size: 2.2rem;
+        }
+        img{
+            width: 90%;
+        }
+    }
+}
+
+.trabajos-media{
+    padding-bottom: 20px;
+}

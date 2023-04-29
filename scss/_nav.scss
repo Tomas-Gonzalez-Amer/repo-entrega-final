@@ -1,0 +1,22 @@
+.botonera{
+    display: flex;
+    background-color: $mainColor;
+        li{
+            a{
+                color: $secondaryColor;
+                font-size: $textXs;
+                justify-content: flex-end;
+                &:hover{
+                    color:greenyellow;
+                }
+            }
+        }
+}
+#abajo{
+    display: flex;
+    align-items: flex-end;
+}
+#btn-color{
+    background-color:greenyellow;
+    // border-color: white;
+}

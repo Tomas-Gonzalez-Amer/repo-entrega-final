@@ -1,0 +1,28 @@
+.grid2{
+    @include grids(grid, 100%, 7.5fr 1fr, 7.5% 80%,
+    "fotos sponsors"
+    "fotos sponsors")
+}
+#mecanizados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+#sponsors-mecanizado{
+    display: flex;
+    grid-area: sponsors;
+}
+.font-size{
+    font-size: $textSm;
+}
+
+.contenedor-aside-mecanizados{
+    @extend .contenedor-aside-inicio;
+    flex-direction: column;
+    margin: 15px 5px 0px 10px;
+    height: 110%;
+    img{
+        width: 85%;
+    }
+}
+

@@ -1,0 +1,51 @@
+.grid4{
+    @include grids(grid, 100%, 1.5fr 4fr 0.7fr, 0.3fr 3fr 3fr,
+    "encabezado encabezado encabezado"
+    "mapa mapa mapa"
+    "form entrada sponsors")
+}
+#mapa{
+    display: grid;
+    justify-items: center;
+    grid-area: mapa;
+    margin-bottom: 10px;
+    background-color: $mainColor;
+    width: 99%;
+}
+#form{
+    display: grid;
+    padding: 10px 0px;
+    flex-direction: row;
+    grid-area: form;
+}
+#foto-entrada{
+    display: grid;
+    grid-area: entrada;
+    flex-direction: row;
+    width: 100%;
+}
+#sponsors-contacto{
+    grid-area: sponsors;
+    display: flex;
+}
+.contenedor-aside-contacto{
+    @extend .contenedor-aside-inicio;
+    flex-direction: column;
+    margin: 5px;
+    width: 90%;
+    img{
+        width: 85%;
+    }
+}
+main{
+    div{
+        form{
+            div{
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+

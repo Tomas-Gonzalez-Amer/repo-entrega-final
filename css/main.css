@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+nav a img {
+  width: 250px;
+}
+
+aside img {
+  width: 90%;
+}
+
+#titulo {
+  grid-area: encabezado;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 3em;
+  width: 100%;
+}
+
+#parrafo {
+  grid-area: parrafo;
+  display: flex;
+  margin-top: 10px;
+}
+
+#fotos {
+  grid-area: fotos;
+  display: flex;
+}
+
+#sponsors {
+  grid-area: sponsors;
+  display: flex;
+}
+
+.botonera {
+  display: flex;
+  background-color: black;
+}
+.botonera li a {
+  color: white;
+  font-size: 1.3em;
+  justify-content: flex-end;
+}
+.botonera li a:hover {
+  color: greenyellow;
+}
+
+#abajo {
+  display: flex;
+  align-items: flex-end;
+}
+
+#btn-color {
+  background-color: greenyellow;
+}
+
+.contenedor-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.contenedor-header img {
+  width: 50%;
+}
+
+.contenedor-aside-inicio, .contenedor-aside-contacto, .contenedor-aside-mecanizados, .contenedor-aside-trabajos, .contenedor-aside-nosotros {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 0px;
+}
+.contenedor-aside-inicio img, .contenedor-aside-contacto img, .contenedor-aside-mecanizados img, .contenedor-aside-trabajos img, .contenedor-aside-nosotros img {
+  width: 10%;
+}
+
+.contenedor-inicio {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+
+.borde {
+  width: 40%;
+  border: solid 3px gray;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.grid1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 7fr 1fr;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "encabezado sponsors" "parrafo sponsors" "fotos sponsors";
+}
+
+.contenedor-general {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.contenedor-p {
+  display: flex;
+  width: 100%;
+}
+
+.contenedor-fotos {
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 26px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contenedor-aside-nosotros {
+  flex-direction: column;
+  width: 27%;
+}
+.contenedor-aside-nosotros img {
+  width: 85%;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 43px;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+#sponsors-nosotros {
+  display: flex;
+  grid-area: sponsors;
+}
+
+.grid3 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 11fr 1.4fr;
+  grid-template-rows: 6% 90%;
+  grid-template-areas: "encabezado sponsors" "fotos sponsors";
+}
+
+.contenedor-aside-trabajos {
+  flex-direction: column;
+  margin-top: 15px;
+  margin-right: 7px;
+  height: 100%;
+}
+.contenedor-aside-trabajos img {
+  width: 85%;
+}
+
+.trabajos-realizados {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.trabajos-realizados figure {
+  width: 30%;
+  border: solid 2px gray;
+  border-radius: 10px;
+  margin: 10px;
+}
+.trabajos-realizados figure figcaption {
+  color: gray;
+  font-size: 2.2rem;
+}
+.trabajos-realizados figure img {
+  width: 90%;
+}
+
+.trabajos-media {
+  padding-bottom: 20px;
+}
+
+.grid2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 7.5fr 1fr;
+  grid-template-rows: 7.5% 80%;
+  grid-template-areas: "fotos sponsors" "fotos sponsors";
+}
+
+#mecanizados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sponsors-mecanizado {
+  display: flex;
+  grid-area: sponsors;
+}
+
+.font-size {
+  font-size: 1.6em;
+}
+
+.contenedor-aside-mecanizados {
+  flex-direction: column;
+  margin: 15px 5px 0px 10px;
+  height: 110%;
+}
+.contenedor-aside-mecanizados img {
+  width: 85%;
+}
+
+.grid4 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.5fr 4fr 0.7fr;
+  grid-template-rows: 0.3fr 3fr 3fr;
+  grid-template-areas: "encabezado encabezado encabezado" "mapa mapa mapa" "form entrada sponsors";
+}
+
+#mapa {
+  display: grid;
+  justify-items: center;
+  grid-area: mapa;
+  margin-bottom: 10px;
+  background-color: black;
+  width: 99%;
+}
+
+#form {
+  display: grid;
+  padding: 10px 0px;
+  flex-direction: row;
+  grid-area: form;
+}
+
+#foto-entrada {
+  display: grid;
+  grid-area: entrada;
+  flex-direction: row;
+  width: 100%;
+}
+
+#sponsors-contacto {
+  grid-area: sponsors;
+  display: flex;
+}
+
+.contenedor-aside-contacto {
+  flex-direction: column;
+  margin: 5px;
+  width: 90%;
+}
+.contenedor-aside-contacto img {
+  width: 85%;
+}
+
+main div form div {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+footer div img {
+  width: 250px;
+  display: inline-block;
+}
+footer div ul li {
+  color: white;
+}
+footer div a img {
+  width: 60px;
+}
+footer div a svg {
+  margin-right: 10px;
+}
+
+.contenedor-footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.rotar {
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.rotar:hover {
+  transform: rotateX(360deg);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid4 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: 0.7fr 6fr 6fr 1.5fr;
+    grid-template-areas: "encabezado encabezado" "mapa mapa" "form entrada" "sponsors sponsors";
+  }
+  .contenedor-aside-contacto {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 14px 5px 0px 5px;
+    width: 98%;
+    flex-direction: row;
+  }
+  .contenedor-aside-contacto img {
+    width: 12%;
+  }
+  .contenedor-inicio {
+    flex-direction: column;
+  }
+  .borde {
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .grid2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "fotos";
+  }
+  #sponsors-mecanizado {
+    display: none;
+  }
+  #sponsors-nosotros {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid4 {
+    display: grid;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 3fr 3fr 2fr 0.7fr;
+    grid-template-areas: "encabezado" "mapa" "entrada" "form" "sponsors";
+  }
+  .grid3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "fotos";
+  }
+  .trabajos-realizados figure {
+    width: 45%;
+  }
+  .trabajos-media {
+    padding-bottom: 30px;
+  }
+  #sponsors {
+    display: none;
+  }
+}
+@media only screen and (max-width: 676px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "fotos";
+  }
+  .card-row {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .card-row div {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-areas: "encabezado" "parrafo" "fotos";
+  }
+  .contenedor-aside-contacto img {
+    width: 17%;
+  }
+  .trabajos-media {
+    height: 100%;
+  }
+  .contenedor-header {
+    flex-direction: column;
+  }
+  .contenedor-header img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+  .w-img {
+    width: 15%;
+  }
+  .contenedor-general {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 510px) {
+  footer div img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 468px) {
+  p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  main section div figure img {
+    justify-content: center;
+  }
+  .trabajos-realizados figure {
+    width: 100%;
+  }
+  .grid3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5% 98.5%;
+    grid-template-areas: "encabezado" "fotos";
+  }
+}
+@media only screen and (max-width: 390px) {
+  #titulo {
+    font-size: 2.5em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

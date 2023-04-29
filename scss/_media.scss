@@ -1,0 +1,196 @@
+@media only screen and (max-width: 1024px) {
+    .grid4{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1.5fr 4fr;
+        grid-template-rows: 0.7fr 6fr 6fr 1.5fr;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "mapa mapa"
+        "form entrada"
+        "sponsors sponsors";
+    }
+    .contenedor-aside-contacto{
+        display: flex;
+        border: solid 2px $mainColor;
+        border-radius: 10px;
+        margin: 14px 5px 0px 5px;
+        width: 98%;
+        flex-direction: row;
+        img{
+            width: 12%;
+        }
+    }
+    .contenedor-inicio{
+        flex-direction: column;
+    }
+    .borde{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .grid2{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "fotos";
+    }
+    #sponsors-mecanizado{
+        display: none;
+    }
+    #sponsors-nosotros{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid4{
+        display: grid;
+        width: 98%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 3fr 3fr 2fr 0.7fr;
+        grid-template-areas: 
+        "encabezado"
+        "mapa"
+        "entrada"
+        "form"
+        "sponsors";
+    }
+    .grid3{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "encabezado"
+        "fotos";
+    }
+    .trabajos-realizados{
+        figure{
+            width: 45%;
+        }
+    }
+    .trabajos-media{
+        padding-bottom: 30px;
+    }
+    #sponsors{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    p{
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "fotos";
+    }
+    .card-row{
+        flex-direction: column;
+        margin-bottom: 0px;
+        div{
+            width: 95%;
+            margin-left: 10px;
+        }
+        }
+    
+    .grid1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 40% 40%;
+        grid-template-areas:
+        "encabezado"
+        "parrafo"
+        "fotos";
+    }
+
+    .contenedor-aside-contacto{
+        img{
+            width: 17%;
+        }
+    }
+    .trabajos-media{
+        height: 100%;
+    }
+    .contenedor-header{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    p{
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+   .w-img{
+    width: 15%;
+   }
+
+    .contenedor-general{
+    justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    // .contenedor{
+    //     height: 30vh;
+    // }
+    footer{
+        div{
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    p{
+        font-size: 1.3em;
+        line-height: 1.4em;
+    }
+    main{
+        section{
+            div{
+                figure{
+                    img{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .trabajos-realizados{
+        figure{
+            width: 100%;
+        }
+    }
+    .grid3{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5% 98.5%;
+        grid-template-areas:
+        "encabezado"
+        "fotos";
+    }
+    // .contenedor{
+    //     height: 28vh;
+    // }
+}
+
+@media only screen and (max-width: 390px) {
+    // .contenedor{
+    //     height: 38vh;
+    // }
+    #titulo{
+        font-size: 2.5em;
+    }
+}

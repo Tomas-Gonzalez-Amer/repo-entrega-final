@@ -1,0 +1,30 @@
+footer{
+    div{
+        img{
+            width: 250px;
+            display: inline-block;
+        }
+        ul{
+            li{
+                color: $secondaryColor;
+            }
+        }
+        a{
+            img{
+                width: 60px;
+            }
+            svg{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.contenedor-footer{
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
