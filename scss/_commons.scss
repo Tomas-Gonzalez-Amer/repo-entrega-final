@@ -4,11 +4,12 @@
 html{
     font-size: 62.5%;
 }
+
 body{
-     // background: linear-gradient(135deg, #e7e7e780 50%, transparent 0),linear-gradient(-135deg, #e7e7e780 50%, transparent 0);
-    // background-size: 2em 2em;
-    // background-color: #ffffff;
-    // opacity: 1;
+     background: linear-gradient(135deg, #e7e7e780 50%, transparent 0),linear-gradient(-135deg, #e7e7e780 50%, transparent 0);
+    background-size: 2em 2em;
+    background-color: #ffffff;
+    opacity: 1;
 }
 h1{
     color: $mainColor;
@@ -32,9 +33,9 @@ p{
 nav a img{
     width: 250px;
 }
-aside img{
-    width: 90%;
-}
+// aside img{
+//     width: 90%;
+// }
 #titulo{
     grid-area: encabezado;
     text-align: center;

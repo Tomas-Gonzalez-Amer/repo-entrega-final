@@ -3,3 +3,4 @@
 *.log
 *.vsc
 node_modules
+*.map

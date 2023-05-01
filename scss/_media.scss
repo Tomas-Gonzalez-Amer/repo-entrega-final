@@ -27,6 +27,9 @@
     .borde{
         width: fit-content;
     }
+    #sponsors-nosotros{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 815px) {
@@ -41,9 +44,7 @@
     #sponsors-mecanizado{
         display: none;
     }
-    #sponsors-nosotros{
-        display: none;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -75,6 +76,12 @@
     }
     #sponsors{
         display: none;
+    }
+    .contenedor-header{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -116,12 +123,12 @@
     .trabajos-media{
         height: 100%;
     }
-    .contenedor-header{
-        flex-direction: column;
+    .contenedor-aside-inicio{
         img{
-            width: 100%;
+            width: 15%;
         }
     }
+
 }
 @media only screen and (max-width: 600px) {
     
@@ -136,12 +143,14 @@
     .contenedor-general{
     justify-content: center;
     }
+    .contenedor-aside-inicio{
+        img{
+            width: 15%;
+        }
+    }
 }
 
 @media only screen and (max-width: 510px) {
-    // .contenedor{
-    //     height: 30vh;
-    // }
     footer{
         div{
             img{
@@ -153,8 +162,11 @@
 
 @media only screen and (max-width: 468px) {
     p{
-        font-size: 1.3em;
+        font-size: $textXs;
         line-height: 1.4em;
+    }
+    .font-size{
+        font-size: $textXs;
     }
     main{
         section{
@@ -181,15 +193,15 @@
         "encabezado"
         "fotos";
     }
-    // .contenedor{
-    //     height: 28vh;
-    // }
+    .contenedor-aside-inicio{
+        img{
+            width: 18%;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 390px) {
-    // .contenedor{
-    //     height: 38vh;
-    // }
     #titulo{
         font-size: 2.5em;
     }
