@@ -23,9 +23,12 @@
     }
     .contenedor-inicio{
         flex-direction: column;
+        justify-content: center;
     }
     .borde{
         width: fit-content;
+        display: flex;
+        flex-direction: column;
     }
     #sponsors-nosotros{
         display: none;

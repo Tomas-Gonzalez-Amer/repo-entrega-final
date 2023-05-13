@@ -15,7 +15,6 @@
 .font-size{
     font-size: $textSm;
 }
-
 .contenedor-aside-mecanizados{
     @extend .contenedor-aside-inicio;
     flex-direction: column;

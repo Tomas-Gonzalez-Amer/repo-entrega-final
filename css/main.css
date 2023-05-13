@@ -8,10 +8,8 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, rgba(231, 231, 231, 0.5019607843) 50%, transparent 0), linear-gradient(-135deg, rgba(231, 231, 231, 0.5019607843) 50%, transparent 0);
-  background-size: 2em 2em;
-  background-color: #ffffff;
-  opacity: 1;
+  background-image: url(../img/bg-img.webp);
+  background-size: cover;
 }
 
 h1 {
@@ -34,6 +32,7 @@ p {
   font-size: 1.6em;
   line-height: 1.2em;
   text-align: center;
+  padding: 8px;
 }
 
 nav a img {
@@ -65,6 +64,22 @@ nav a img {
 #sponsors {
   grid-area: sponsors;
   display: flex;
+}
+
+.btn-red {
+  background-color: red !important;
+  color: white !important;
+}
+.btn-red:hover {
+  background-color: darkred !important;
+}
+
+.btn-green {
+  background-color: green !important;
+  color: white !important;
+}
+.btn-green:hover {
+  background-color: darkgreen !important;
 }
 
 .botonera {
@@ -119,11 +134,11 @@ nav a img {
 }
 
 .borde {
-  width: 40%;
-  border: solid 3px gray;
+  border: solid 3px black;
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 10px;
+  width: 60%;
 }
 
 .grid1 {
@@ -367,9 +382,12 @@ footer div a svg {
   }
   .contenedor-inicio {
     flex-direction: column;
+    justify-content: center;
   }
   .borde {
     width: fit-content;
+    display: flex;
+    flex-direction: column;
   }
   #sponsors-nosotros {
     display: none;

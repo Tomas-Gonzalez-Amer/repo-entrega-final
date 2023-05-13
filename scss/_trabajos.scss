@@ -3,7 +3,6 @@
     "encabezado sponsors"
     "fotos sponsors")
 }
-
 .contenedor-aside-trabajos{
     @extend .contenedor-aside-inicio;
     flex-direction: column;
@@ -34,7 +33,6 @@
         }
     }
 }
-
 .trabajos-media{
     padding-bottom: 20px;
 }
